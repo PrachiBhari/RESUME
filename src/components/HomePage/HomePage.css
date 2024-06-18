@@ -78,8 +78,9 @@
 }
 
 .homepage_logo{
-    height: 60px;
+    height: 80px;
     margin: 15px 0;
+    color: yellow;
 }
 
 .homepage_left_button{

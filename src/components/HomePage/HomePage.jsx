@@ -2,6 +2,7 @@
 import './HomePage.css';
 import githubIcon from  '../../assets/git.png';
 import { motion } from 'framer-motion';
+import { FaLinkedin } from "react-icons/fa";
 
 function HomePage(){
 
@@ -45,11 +46,7 @@ My journey in the field of computer science has equipped me with a solid underst
                         />
                     </a>
                     <a href='#' target='_blank'>
-                        <img 
-                            src={githubIcon}
-                            alt='githubIconImage'
-                            className='homepage_logo'
-                        />
+                        <FaLinkedin className='homepage_logo'/>
                     </a>
                 </div>
 
