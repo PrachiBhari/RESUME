@@ -15,16 +15,18 @@ function HomePage(){
                 </p>
 
                 <p className='homepage_left_h2'>
-                    <span>O</span>
-                    <span>m</span>
-                    <span>k</span>
-                    <span>a</span>
-                    <span>r</span>
+                    <span>P</span>
+                    <span>R</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>H</span>
+                    <span>I</span>
                     &nbsp;
-                    <span>M</span>
-                    <span>o</span>
-                    <span>r</span>
-                    <span>e</span>
+                    <span>B</span>
+                    <span>H</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>I</span>
                 </p>
 
                 <p className='homepage_left_h3'>
