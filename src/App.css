@@ -1,9 +1,46 @@
 *{
   margin: 0;
-  background-color: black;
+  background-color: #000000;
   color: whitesmoke;
+  scroll-behavior: smooth;
+  
 }
-
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .app{
   padding: 0 9%;
+  animation: fadeInSlideUp 1s ease-out;
+}
+
+
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  .homepage_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar_right {
+    flex-direction: column;
+  }
+
+  .navbar_right p {
+    margin: 5px 0;
+  }
+
+  .homepage_right img {
+    width: 100%;
+    height: auto;
+  }
 }

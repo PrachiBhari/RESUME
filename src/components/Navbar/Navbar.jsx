@@ -1,10 +1,18 @@
 import { NAVBAR_TITLE, navOptions } from '../../constants';
+import { motion } from 'framer-motion';
 import './Navbar.css';
 
-
-
-function NavOption(props){
-  return <p>{props.navItem}</p>
+function NavOption(props) {
+  return (
+    <motion.a
+      href={`#${props.navItem}`}
+      whileHover={{ scale: [null, 1.2, 1.1] }}
+      transition={{ duration: 0.3 }}
+      className="nav-link"
+    >
+      {props.navItem}
+    </motion.a>
+  );
 }
 function Navbar(){
   
@@ -28,6 +36,7 @@ function Navbar(){
           <p>Projects</p>
           <p>Resume</p> */}
       </div>
+      
     </div>
   )
 }

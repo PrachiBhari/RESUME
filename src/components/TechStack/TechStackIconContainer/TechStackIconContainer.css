@@ -13,3 +13,14 @@
 .techstack_icons>img:hover{
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    .techstack_icon {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .techstack_icon p {
+        font-size: 0.9em;
+    }
+}

@@ -18,10 +18,18 @@ function App() {
   return (
     <div className='app'>
       <Navbar/>
+      <section id='About'>
       <HomePage/>
+      </section>
+      <section id='Tools'>
       <TechStack/> 
+      </section>
+      <section id='Experience'>
       <Experience/>
+      </section>
+      <section id='Projects'>
       <Projects/>
+      </section>
     </div>
   )
 }

@@ -13,19 +13,67 @@
     font-size: 22px;
 }
 .red_color{
-    color: red;
+    color: #F5C014;
 }
 
-.homepage_left_h2{
-    font-size: 48px;
-    font-weight: 700;
-}
+@keyframes fadeInLetters {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .homepage_left_h2 {
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden; /* Ensures the text stays within the container */
+    white-space: nowrap; /* Keeps the text on a single line */
+    margin: 0 auto; /* Center the text */
+  }
+  
+  .homepage_left_h2 span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInLetters 1s ease-out forwards;
+  }
+  
+  /* Adjust the delay for each letter */
+  .homepage_left_h2 span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .homepage_left_h2 span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .homepage_left_h2 span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .homepage_left_h2 span:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .homepage_left_h2 span:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .homepage_left_h2 span:nth-child(6) {
+    animation-delay: 0.6s;
+  }
+  .homepage_left_h2 span:nth-child(7) {
+    animation-delay: 0.7s;
+  }
+  .homepage_left_h2 span:nth-child(8) {
+    animation-delay: 0.8s;
+  }
+  .homepage_left_h2 span:nth-child(9) {
+    animation-delay: 0.9s;
+  }
+
 .homepage_left_h3{
     font-size: 30px;
 }
 
 .homepage_left_description{
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .homepage_logo{
@@ -38,12 +86,27 @@
     font-size: 20px;
     padding: 8px 10px;
     background-color: black;
-    color: red;
+    color: #F5C014;
     cursor: pointer;
 }
 .homepage_right{
     flex: 0.4;
 }
+
+
 .homepage_right>img{
     width: 100%;
+    border-radius: 12px;
 }
+
+@media (max-width: 768px) {
+    .homepage_container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .homepage_left, .homepage_right {
+      width: 100%;
+      padding: 10px;
+    }
+  }
